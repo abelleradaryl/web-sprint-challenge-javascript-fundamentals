@@ -26,13 +26,38 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map has a built in loop that runs the CB function for every index, it returns a new array with those results. Can be used for updating or changing values in an array and pushing the edited values into a new array.
+
+.reduce returns a single value, for example squishing an array into one value. Accumulator acts as our bucket, where we're keeping track of the final count. Can be used to add or subtract for a total.
+
+.filter has a built in loop and performs a check using the CB function. If the check returns true, that values are added to the new array. Can be used for filtering data into catagories and pushing them into new arrays.
+
 2. Explain the difference between a callback and a higher order function.
+
+Higher Order Function is a function that takes another function as a parameter and returns a function
+
+Callback function is a function passed into another function as an argument.
 
 3. Explain what a closure is.
 
+Closure is an internal function accessing an external variable
+
 4. Describe the four principles of the 'this' keyword.
 
+Window binding: Considered default binding, it refers to the window
+
+Implicit binding: The object that is standing before the dot is what this keyword will be bound to. The left side of the dot is an object and the right side of the dot is a key name
+
+Explicit binding: Explicitly telling a function what object it should use for 'this'. Using functions such as call, apply and bind.
+
+New binding: A way to invoke a class or prototype, helps the compiler to know that you're creating an instance of a prototype or class.
+
+
 5. Why do we need super() in an extended class?
+
+Super() is used to access and call functions on an object's parent.
+
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
